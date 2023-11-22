@@ -1,0 +1,571 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.preloader{
+    width: 100%;
+    height: 100%;
+    background-color: #31143d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 15px dotted  rgb(118, 48, 232);
+    border-top: 15px dotted #341d3e;
+    animation: spinner 0.8s linear  infinite;
+}
+.hidden{
+    display: none;
+}
+@keyframes spinner{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.logo-my{
+    width: 140px;
+    height: 70px;
+    background-image: url(../image/log.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 30px;
+}
+nav{
+    width: 100%;
+    position: sticky;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #31143d;
+    z-index: 3;
+}
+ul{
+    width: 100%;
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+}
+li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    display: block;
+    padding: 22px;
+}
+.menu>ul>li:last-child{
+    border: 1px solid grey;
+}
+.mobile-menu-btn{
+    background-color: transparent;
+    color: aliceblue;
+    font-size: 32px;
+    border: none;
+    display: none;
+}
+li a:hover{
+    color:rgb(151, 88, 252);
+}
+.theme{
+    background-color: transparent;
+    border: none;
+    font-size: 35px;
+    color: whitesmoke;
+}
+body.light{
+    background-color: whitesmoke;
+    color: white;
+}
+#home{
+    width: 100%;
+    height: auto;
+    background-image: url(../image/21212.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center center;
+}
+.home-color {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(70, 31, 136, 0.6));
+    padding: 100px;
+}
+.home-color h2 {
+    font-size: 35px;
+    color: whitesmoke;
+    font-family: Arial;
+    margin: 20px;
+}
+.home-color h1 {
+    font-size: 80px;
+    color: whitesmoke;
+    margin: 50px 20px;
+}
+.home-color p {
+    font-size: 50px;
+    color: whitesmoke;
+    font-family: Arial;
+    margin: 20px;
+}
+button{
+    width: 130px;
+    height: 35px;
+    border: 1px solid rgb(151, 88, 252);
+    background-color: rgb(18, 10, 42);
+}
+button a{
+    font-size: 17px;
+    font-family: Arial;
+    padding: 7px;
+    padding-left: 20px;
+}
+option{
+    background: #31143d!important;
+    color: white !important;
+}
+.leng_site{
+    border-radius: 20px;
+    width: 100px;
+    border: none;
+    background-color: #31143d;
+    color: aliceblue;
+}
+.leng_site option{
+    background-color: #31143d;
+    color: aliceblue;
+    text-align: center;
+    font-size: 18px;
+}
+#about {
+    width: 100%;
+    height: auto;
+    background-color: rgb(18, 10, 42);
+    color: whitesmoke;
+    padding: 100px;
+}
+#about>*{
+    margin: 20px;
+}
+#about h1{
+    font-size: 50px;
+}
+.about-line{
+    width: 130px;
+    height: 1px;
+    background: linear-gradient(-135deg, #af81c3, #471160);
+}
+#about p{
+    font-size: 22px;
+    margin: 50px 20px;
+    width: 35%;
+    font-family: Tahoma sans-serif;
+    text-align: unset;
+}
+.about-my{
+    width: 60%;
+    height: auto;
+    border: 1px solid rgb(151, 88, 252);
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+}
+.about-my ol{
+    font-size: 20px;
+    list-style-type: none;
+}
+.about-my ol li{
+    margin: 20px;
+}
+#services{
+    width: 100%;
+    height: auto;
+    background-color: rgb(29, 16, 46);
+    padding: 100px;
+    color: aliceblue;
+}
+.skills-text h2{
+    font-size: 40px;
+}
+.skills-line{
+    width: 160px;
+    height: 1px;
+    background: linear-gradient(-135deg, #9b71cb, #361a42);
+    margin-top: 10px;
+}
+.skillsMy{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0px;
+}
+.my{
+    width: 40%;
+}
+.skillsMy h3{
+
+    margin-top: 40px;
+}
+.percent{
+    width: 100%;
+    height: 8px;
+    background-color: rgb(210, 192, 240);
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.progress{
+    height: 8px;
+    border-radius: 5px;
+    background-color: #9b71cb;
+}
+#portfolio {
+    width: 100%;
+    height: auto;
+    background-color: rgb(18, 10, 42);
+    padding: 100px;
+    color: aliceblue;
+}
+.portfolio-text h2 {
+    font-size: 50px;
+    padding-top: 40px;
+    margin-left: 50px;
+}
+.portfolio-line {
+    width: 110px;
+    height: 1px;
+    background: linear-gradient(-135deg, #9f6dd5, #31143d);
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.portfolio-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+}
+.port-box {
+    width: 350px;
+    height: 150px;
+    border: 1px solid rgb(151, 88, 252);
+    margin: 30px;
+}
+#contact{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(-155deg, rgb(49, 16, 40),rgb(19, 10, 42) );
+    padding: 100px;
+    color: aliceblue;
+}
+#contact h2 {
+    font-size: 50px;
+    padding-top: 40px;
+    margin-left: 50px;
+}
+.Contact-line {
+    width: 170px;
+    height: 1px;
+    background: linear-gradient(-135deg, rgb(151, 104, 205),#451f55 );
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.contact-input{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+iframe{
+    width: 600px;
+}
+.input-grup{
+    margin-bottom: 25px;
+    position: relative;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: aliceblue;
+    background: transparent;
+    font-size: 20px;
+}
+label{
+    height: 100%;
+    position: absolute;
+    left:0;
+    top:0;
+    padding: 10px;
+    cursor:text;
+    transition: 0.5s;
+}
+i{
+    margin-right: 7px;
+}
+.contact-input button{
+    padding: 17px 0;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    font-size: 17px;
+}
+input:focus~label,
+textarea:focus~label{
+    top:-35px;
+    font-size: 14px;
+}
+input:focus~label input:valid~label {
+    top: 35px;
+    font-size: 14px;
+}
+.input2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input2 .input-grup{
+    width: 48%;
+}
+#contact button{
+    background: linear-gradient(-155deg, rgb(49, 16, 40), rgb(19, 10, 42));
+    color: aliceblue;
+}
+#icons{
+    width: 100%;
+    background-color: rgb(18, 10, 42);
+    text-align: center;
+}
+.icons-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.icons-links a{
+    color: aliceblue;
+    font-size: 30px;
+    padding: 10px;
+}
+.user{
+    font-size: 22px;
+    color: aliceblue;
+    padding: 25px;
+    border-top: 1px solid gray;
+}
+body.light #about{
+    background-color: white;
+    color: #31143d;
+}
+body.light #services {
+    background-color: #f4f4f4;
+    color: #31143d;
+}
+body.light #portfolio {
+    background-color: white;
+    color: #31143d;
+}
+body.light #contact {
+    background: linear-gradient(-155deg, white, #ecd2f7);
+    color: #31143d;
+}
+body.light .contact-input button{
+    border: 1px solid #31143d;
+}
+body.light input ,body.light textarea{
+    border: 1px solid #31143d;
+}
+@media only screen and (max-width:992px) {
+    .mobile-menu-btn{
+        display: block;
+    } 
+    .fa-xmark{
+        display: none;
+    }
+nav{
+    position: relative;
+    justify-content: space-between;
+}
+.menu{
+    position: absolute;
+    top: 70px;
+    background-color: #361a42;
+    width: 100%;
+    display: none;
+}
+ul{
+    flex-direction: column;
+}
+.menu>ul>li:last-child{
+    border: none;
+ } 
+ .show{
+    display: block;
+ }
+ .hidden{
+    display: none;
+ }
+ .home-color {
+     padding: 50px;
+ }
+ .about p{
+    padding: 20px;
+ }
+ .about-my{
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+}
+#about p{
+    width: 80%;
+}
+.contact-input{
+    flex-direction: column;
+}
+.contact-input>*{
+    margin: 10px;
+}
+iframe {
+    width: 100%;
+}
+}
+@media only screen and (max-width:600px){
+    .logo-my{
+        width: 220px;
+        height: 55px;
+        margin-left: 10px;
+    }
+    .home-color h2,
+     .home-color p{
+        font-size: 25px;
+    }
+    .home-color,
+    #services,
+    #about,
+    #portfolio,
+    #contact{
+        padding: 20px;
+    }
+    #about>*{
+        margin: 0;
+    }
+    .home-color h1,
+     #about h1{
+        font-size: 40px;
+    }
+    .about-line{
+        width: 100px;
+    }
+    #about p {
+        font-size: 12px;
+        width: 100%;
+    }
+    .about-my {
+        width: 100%;
+        align-items: flex-start;
+        margin: 0;
+    }
+    .about-my ol li {
+        font-size: 10px;
+        margin: 10px;
+    }
+    .my h3 {
+        font-size: 16px;
+    }
+    .skills-text h2 {
+            font-size: 32px;
+        }
+    .portfolio-text h2 {
+        font-size: 30px;
+        margin:auto;
+    }
+    .skills-line {
+        width: 100px;
+        margin: auto;
+        margin-top: 5px;
+    }
+    .portfolio-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .port-box {
+        width: 150px;
+        height: 70px;
+        margin: 30px;
+    }
+    #contact h2 {
+        font-size: 25px;
+        margin: auto;
+    }
+    .Contact-line {
+        width: 100px;
+        margin: auto;
+        margin-top: 5px;
+    }
+    .contact-input {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        font-size: 8px;
+    }
+    .contact-input button {
+        width: 100%;
+        height: 30px;
+        font-size: 8px;
+    }
+    input,textarea {
+        width: 100%;
+        height: 35px;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+    iframe {
+        width: 100%;
+        height: 200px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
